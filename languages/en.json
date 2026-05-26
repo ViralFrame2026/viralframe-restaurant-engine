@@ -1,0 +1,81 @@
+{
+  "site": {
+    "language": "en",
+    "locale": "en_US"
+  },
+  "ui": {
+    "navOpenLabel": "Open navigation menu",
+    "navCloseLabel": "Close navigation menu",
+    "languageSwitcherLabel": "Language selector",
+    "languageNames": {
+      "en": "English",
+      "es": "Spanish"
+    },
+    "skipToContent": "Skip to content",
+    "mapAriaLabel": "Open {brand} in maps",
+    "ratingAriaLabel": "Five star rating",
+    "locationLabels": {
+      "hours": "Hours",
+      "phone": "Phone",
+      "email": "Email"
+    }
+  },
+  "footer": {
+    "exploreTitle": "Explore",
+    "socialTitle": "Social",
+    "newsletterTitle": "Private notes",
+    "newsletterLabel": "Receive seasonal menu releases.",
+    "newsletterPlaceholder": "Email address",
+    "newsletterButton": "Join",
+    "backToTop": "Back to top",
+    "privacyLink": "Privacy",
+    "copyrightSuffix": "All rights reserved."
+  },
+  "forms": {
+    "reservation": {
+      "labels": {
+        "name": "Name",
+        "email": "Email",
+        "date": "Date",
+        "time": "Time",
+        "guests": "Guests",
+        "message": "Message",
+        "submit": "Request Reservation"
+      },
+      "messageLabels": {
+        "intro": "Reservation request for",
+        "email": "Email",
+        "date": "Date",
+        "time": "Time",
+        "guests": "Guests",
+        "message": "Message",
+        "emailSubject": "Reservation request"
+      },
+      "sendingMessage": "Sending your request...",
+      "errorMessage": "We could not send the request. Please contact the host team directly.",
+      "messages": {
+        "nameRequired": "Please enter your name.",
+        "emailInvalid": "Please enter a valid email address.",
+        "dateRequired": "Please choose a reservation date.",
+        "datePast": "Please choose today or a future date.",
+        "timeRequired": "Please choose a preferred time.",
+        "timeEarly": "Please choose a time after {min}.",
+        "timeLate": "Please choose a time before {max}.",
+        "guestsRange": "Please choose between {min} and {max} guests."
+      }
+    },
+    "newsletter": {
+      "invalidMessage": "Enter a valid email to join the list.",
+      "errorMessage": "We could not add this email right now."
+    }
+  },
+  "privacy": {
+    "navLabel": "Privacy navigation",
+    "menuLink": "Menu",
+    "galleryLink": "Gallery",
+    "reserveCta": "Reserve",
+    "title": "Privacy Policy",
+    "eyebrow": "Privacy",
+    "backCta": "Back to Site"
+  }
+}

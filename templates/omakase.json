@@ -1,0 +1,108 @@
+{
+  "mood": "Tokyo luxury, dark minimal, quiet, precise",
+  "fonts": {
+    "heading": "\"Playfair Display\", Georgia, serif",
+    "body": "\"Inter\", Arial, sans-serif"
+  },
+  "colors": {
+    "bg": "#030303",
+    "gold": "#B6463A",
+    "cream": "#F7F0E6",
+    "wine": "#5B1116",
+    "sage": "#A8A093"
+  },
+  "overlays": {
+    "hero": "dark-red cinematic",
+    "section": "minimal shadow"
+  },
+  "imagery": {
+    "style": "sushi counter, sake, knife work, low light",
+    "hero": "assets/images/gallery/hero.jpg"
+  },
+  "labels": {
+    "primaryCta": "Reserve the Counter",
+    "secondaryCta": "Explore Omakase"
+  },
+  "heroStyle": {
+    "composition": "large editorial headline over full-bleed image",
+    "tone": "silent and precise"
+  },
+  "spacing": {
+    "section": "generous",
+    "cards": "compact"
+  },
+  "cards": {
+    "radius": "8px",
+    "style": "glass dark"
+  },
+  "buttons": {
+    "radius": "999px",
+    "style": "filled red accent and glass secondary"
+  },
+  "sectionLabels": {
+    "experience": "The Kaze experience",
+    "menu": "Seasonal omakase",
+    "chef": "Chef Kenji Sato",
+    "gallery": "Gallery",
+    "reservations": "Reservations"
+  },
+  "menuCategoryDefaults": [
+    { "label": "All", "value": "all" },
+    { "label": "Sashimi", "value": "sashimi" },
+    { "label": "Nigiri", "value": "nigiri" },
+    { "label": "Sake", "value": "sake" },
+    { "label": "Finish", "value": "finish" }
+  ],
+  "faqDefaults": [
+    { "question": "How long is the omakase?", "answer": "Most seatings last around two hours." },
+    { "question": "Do you offer private buyouts?", "answer": "Yes. The full counter can be reserved for private omakase." }
+  ],
+  "seoDefaults": {
+    "titleSuffix": "Tokyo Luxury Omakase",
+    "description": "Premium Tokyo-inspired omakase with seasonal nigiri, sake pairings, and quiet precision."
+  },
+  "theme": {
+    "colors": {
+      "bg": "#030303",
+      "gold": "#B6463A",
+      "cream": "#F7F0E6",
+      "wine": "#5B1116",
+      "sage": "#A8A093"
+    },
+    "fonts": {
+      "heading": "\"Playfair Display\", Georgia, serif",
+      "body": "\"Inter\", Arial, sans-serif"
+    },
+    "radius": {
+      "base": "8px",
+      "pill": "999px"
+    },
+    "shadows": {
+      "base": "0 28px 80px rgba(0, 0, 0, 0.42)",
+      "accent": "0 18px 55px rgba(182, 70, 58, 0.16)"
+    },
+    "spacing": {
+      "section": "112px",
+      "sectionMobile": "88px"
+    },
+    "overlays": {
+      "hero": "linear-gradient(180deg, rgba(0,0,0,.38), rgba(3,3,3,.86) 58%, #030303 100%)"
+    },
+    "motion": {
+      "duration": "260ms",
+      "ease": "cubic-bezier(0.22, 1, 0.36, 1)"
+    },
+    "buttons": {
+      "primary": "accent-fill",
+      "secondary": "glass"
+    },
+    "cards": {
+      "style": "dark-glass",
+      "border": "rgba(255, 255, 255, 0.12)"
+    },
+    "hero": {
+      "imagePosition": "center center",
+      "headlineScale": "editorial"
+    }
+  }
+}

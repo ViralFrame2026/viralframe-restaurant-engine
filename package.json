@@ -1,0 +1,21 @@
+{
+  "name": "aurelia-dining-template",
+  "version": "1.0.0",
+  "description": "Premium reusable restaurant landing page template",
+  "private": true,
+  "scripts": {
+    "dev": "serve .",
+    "preview": "serve .",
+    "sync": "node scripts/sync-client-assets.mjs",
+    "build": "npm run sync",
+    "template": "node scripts/template-info.mjs",
+    "validate": "node scripts/validate-engine.mjs",
+    "smoke": "node tests/smoke.mjs",
+    "test": "npm run smoke",
+    "build-assets": "npm run sync"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "serve": "^14.2.4"
+  }
+}

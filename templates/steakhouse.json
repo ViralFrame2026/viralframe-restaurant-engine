@@ -1,0 +1,34 @@
+{
+  "mood": "luxury steakhouse, ember, leather, cellar, confident",
+  "fonts": {
+    "heading": "\"Playfair Display\", Georgia, serif",
+    "body": "\"Inter\", Arial, sans-serif"
+  },
+  "colors": {
+    "bg": "#050403",
+    "gold": "#C99A4A",
+    "cream": "#F4E8D6",
+    "wine": "#5A1618",
+    "sage": "#8F8A72"
+  },
+  "overlays": { "hero": "ember dark", "section": "cellar shadow" },
+  "imagery": { "style": "grill, aged beef, wine, leather booths" },
+  "labels": { "primaryCta": "Reserve a Booth", "secondaryCta": "Explore Cuts" },
+  "heroStyle": { "composition": "bold editorial", "tone": "confident" },
+  "spacing": { "section": "generous", "cards": "dense" },
+  "cards": { "radius": "8px", "style": "dark cellar" },
+  "buttons": { "radius": "999px", "style": "amber primary" },
+  "sectionLabels": { "experience": "The steakhouse", "menu": "Prime cuts", "chef": "Pitmaster", "gallery": "Gallery", "reservations": "Reservations" },
+  "menuCategoryDefaults": [
+    { "label": "All", "value": "all" },
+    { "label": "Raw Bar", "value": "raw" },
+    { "label": "Cuts", "value": "cuts" },
+    { "label": "Sides", "value": "sides" },
+    { "label": "Cellar", "value": "cellar" }
+  ],
+  "faqDefaults": [
+    { "question": "Do you dry-age in house?", "answer": "Signature cuts can be configured for in-house dry-aging." },
+    { "question": "Do you host private dinners?", "answer": "Private cellar and booth experiences are available." }
+  ],
+  "seoDefaults": { "titleSuffix": "Luxury Steakhouse", "description": "Premium steakhouse landing page for prime cuts, wine, and private dining." }
+}

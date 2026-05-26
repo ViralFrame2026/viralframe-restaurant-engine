@@ -1,0 +1,17 @@
+{
+  "name": "Kaze Omakase",
+  "short_name": "Kaze",
+  "description": "Omakase de lujo inspirado en Tokio",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#030303",
+  "theme_color": "#030303",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

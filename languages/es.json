@@ -1,0 +1,81 @@
+{
+  "site": {
+    "language": "es",
+    "locale": "es_ES"
+  },
+  "ui": {
+    "navOpenLabel": "Abrir menu de navegacion",
+    "navCloseLabel": "Cerrar menu de navegacion",
+    "languageSwitcherLabel": "Selector de idioma",
+    "languageNames": {
+      "en": "Ingles",
+      "es": "Espanol"
+    },
+    "skipToContent": "Saltar al contenido",
+    "mapAriaLabel": "Abrir {brand} en mapas",
+    "ratingAriaLabel": "Calificacion de cinco estrellas",
+    "locationLabels": {
+      "hours": "Horarios",
+      "phone": "Telefono",
+      "email": "Email"
+    }
+  },
+  "footer": {
+    "exploreTitle": "Explorar",
+    "socialTitle": "Redes",
+    "newsletterTitle": "Notas privadas",
+    "newsletterLabel": "Recibe novedades de temporada.",
+    "newsletterPlaceholder": "Correo electronico",
+    "newsletterButton": "Unirme",
+    "backToTop": "Volver arriba",
+    "privacyLink": "Privacidad",
+    "copyrightSuffix": "Todos los derechos reservados."
+  },
+  "forms": {
+    "reservation": {
+      "labels": {
+        "name": "Nombre",
+        "email": "Email",
+        "date": "Fecha",
+        "time": "Hora",
+        "guests": "Personas",
+        "message": "Mensaje",
+        "submit": "Solicitar reserva"
+      },
+      "messageLabels": {
+        "intro": "Solicitud de reserva para",
+        "email": "Email",
+        "date": "Fecha",
+        "time": "Hora",
+        "guests": "Personas",
+        "message": "Mensaje",
+        "emailSubject": "Solicitud de reserva"
+      },
+      "sendingMessage": "Enviando tu solicitud...",
+      "errorMessage": "No pudimos enviar la solicitud. Contacta al equipo directamente.",
+      "messages": {
+        "nameRequired": "Ingresa tu nombre.",
+        "emailInvalid": "Ingresa un email valido.",
+        "dateRequired": "Elige una fecha para la reserva.",
+        "datePast": "Elige hoy o una fecha futura.",
+        "timeRequired": "Elige un horario.",
+        "timeEarly": "Elige un horario despues de {min}.",
+        "timeLate": "Elige un horario antes de {max}.",
+        "guestsRange": "Elige entre {min} y {max} personas."
+      }
+    },
+    "newsletter": {
+      "invalidMessage": "Ingresa un email valido para sumarte.",
+      "errorMessage": "No pudimos agregar este email ahora."
+    }
+  },
+  "privacy": {
+    "navLabel": "Navegacion de privacidad",
+    "menuLink": "Menu",
+    "galleryLink": "Galeria",
+    "reserveCta": "Reservar",
+    "title": "Politica de privacidad",
+    "eyebrow": "Privacidad",
+    "backCta": "Volver al sitio"
+  }
+}

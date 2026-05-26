@@ -1,0 +1,34 @@
+{
+  "mood": "cinematic fine dining, intimate, warm, editorial",
+  "fonts": {
+    "heading": "\"Playfair Display\", Georgia, serif",
+    "body": "\"Inter\", Arial, sans-serif"
+  },
+  "colors": {
+    "bg": "#050505",
+    "gold": "#D6B46A",
+    "cream": "#F5EFE1",
+    "wine": "#6E222A",
+    "sage": "#98A083"
+  },
+  "overlays": { "hero": "warm cinematic", "section": "soft glass" },
+  "imagery": { "style": "candlelight, plated cuisine, wine cellar" },
+  "labels": { "primaryCta": "Reserve a Table", "secondaryCta": "Explore Menu" },
+  "heroStyle": { "composition": "large editorial", "tone": "cinematic" },
+  "spacing": { "section": "generous", "cards": "balanced" },
+  "cards": { "radius": "8px", "style": "premium glass" },
+  "buttons": { "radius": "999px", "style": "gold primary" },
+  "sectionLabels": { "experience": "The experience", "menu": "Signature menu", "chef": "Chef", "gallery": "Gallery", "reservations": "Reservations" },
+  "menuCategoryDefaults": [
+    { "label": "All", "value": "all" },
+    { "label": "Starters", "value": "starters" },
+    { "label": "Mains", "value": "mains" },
+    { "label": "Desserts", "value": "desserts" },
+    { "label": "Wine", "value": "wine" }
+  ],
+  "faqDefaults": [
+    { "question": "Is there a dress code?", "answer": "Refined evening attire is suggested." },
+    { "question": "Do you offer private dining?", "answer": "Private dining is available by request." }
+  ],
+  "seoDefaults": { "titleSuffix": "Modern Fine Dining", "description": "Premium fine dining restaurant landing page." }
+}

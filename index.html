@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaze Omakase | Omakase de lujo inspirado en Tokio</title>
+  <meta name="description" content="Kaze Omakase es una barra japonesa premium inspirada en Tokio, con nigiri de temporada, maridajes de sake y precision silenciosa.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#030303">
+  <link rel="canonical" href="https://viralframe2026.github.io/viralframe-restaurant-engine/">
+
+  <meta property="og:title" content="Kaze Omakase | Omakase de lujo inspirado en Tokio">
+  <meta property="og:description" content="Kaze Omakase es una barra japonesa premium inspirada en Tokio, con nigiri de temporada, maridajes de sake y precision silenciosa.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kaze Omakase">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:image" content="assets/images/gallery/hero.jpg">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="1067">
+  <meta property="og:url" content="https://viralframe2026.github.io/viralframe-restaurant-engine/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kaze Omakase | Omakase de lujo inspirado en Tokio">
+  <meta name="twitter:description" content="Kaze Omakase es una barra japonesa premium inspirada en Tokio, con nigiri de temporada, maridajes de sake y precision silenciosa.">
+  <meta name="twitter:image" content="assets/images/gallery/hero.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="manifest" href="site.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site-config.js" defer></script>
+  <script src="js/vendor/gsap.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script id="restaurantSchema" type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Kaze Omakase",
+      "url": "https://viralframe2026.github.io/viralframe-restaurant-engine/",
+      "image": "assets/images/gallery/hero.jpg",
+      "description": "Kaze Omakase es una barra japonesa premium inspirada en Tokio, con nigiri de temporada, maridajes de sake y precision silenciosa.",
+      "servesCuisine": [
+        "Japonesa",
+        "Omakase",
+        "Sushi"
+      ],
+      "priceRange": "$$$$",
+      "telephone": "+12125550147",
+      "email": "reservations@kazeomakase.com",
+      "acceptsReservations": true,
+      "sameAs": [
+        "https://instagram.com/kazeomakase",
+        "https://tiktok.com/@kazeomakase"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "18 Shiro Lane, Tribeca",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "18:00",
+          "closes": "23:30"
+        }
+      ]
+    }
+  </script>
+  <style id="engineTheme">
+  :root {
+    --bg: #030303;
+    --gold: #B6463A;
+    --cream: #F7F0E6;
+    --wine: #5B1116;
+    --sage: #A8A093;
+    --font-heading: "Playfair Display", Georgia, serif;
+    --font-body: "Inter", Arial, sans-serif;
+    --radius: 8px;
+    --shadow: 0 28px 80px rgba(0, 0, 0, 0.42);
+    --gold-shadow: 0 18px 55px rgba(182, 70, 58, 0.16);
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --hero-overlay: linear-gradient(180deg, rgba(0, 0, 0, 0.38), rgba(3, 3, 3, 0.86) 58%, #030303 100%);
+  }
+</style>
+</head>
+<body class="is-loading">
+  <a class="skip-link" href="#home">Saltar al contenido</a>
+  <div class="preloader" id="preloader" aria-label="Loading Kaze Omakase">
+    <div class="preloader__panel">
+      <p class="preloader__eyebrow">Preparando la barra</p>
+      <span class="preloader__brand">Kaze</span>
+      <div class="preloader__track" aria-hidden="true"><span class="preloader__bar" id="preloaderBar"></span></div>
+      <span class="preloader__counter" id="preloaderCounter">0%</span>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Kaze Omakase home">
+        <span>Kaze</span>
+        <small>Omakase</small>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu de navegacion" aria-controls="navPanel" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-panel" id="navPanel">
+        <a class="nav-link" href="#experience">Experiencia</a>
+        <a class="nav-link" href="#menu">Menu</a>
+        <a class="nav-link" href="#chef">Chef</a>
+        <a class="nav-link" href="#gallery">Galeria</a>
+        <a class="nav-link" href="#reservations">Reservas</a>
+        <a class="btn btn--small btn--gold" href="#reservations">Reservar barra</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-label="Kaze Omakase introduction">
+      <img class="hero__image" src="assets/images/gallery/hero.jpg" alt="Barra omakase minimalista con nigiri fresco" width="1717" height="916" loading="eager" decoding="async" fetchpriority="high">
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <div class="hero__copy reveal">
+          <div class="hero__meta"><p class="eyebrow">Barra omakase de Tokio en penumbra</p><span>Dos turnos por noche</span></div>
+          <h1>Omakase de temporada servido con silencio, fuego y precision.</h1>
+          <p class="hero__lead">Una barra de sushi de doce lugares para nigiri de temporada, sashimi impecable, sake excepcional y noches guiadas por el ritmo del chef Kenji Sato.</p>
+          <div class="hero__actions"><a class="btn btn--gold" href="#reservations">Reservar barra</a><a class="btn btn--glass" href="#menu">Explorar omakase</a></div>
+        </div>
+        <div class="hero__reservation reveal" aria-label="Reservation preview">
+          <div><span>Proximo turno</span><strong>Esta noche, 8:45 PM</strong></div>
+          <div><span>Omakase de temporada</span><strong>17 momentos / $185</strong></div>
+          <a class="btn btn--small btn--gold" href="#reservations">Solicitar</a>
+        </div>
+        <div class="hero__stats reveal" aria-label="Restaurant highlights">
+          <div><span>12</span><strong>Lugares en barra</strong></div>
+          <div><span>17</span><strong>Momentos omakase</strong></div>
+          <div><span>06</span><strong>Rutas de sake</strong></div>
+        </div>
+        <div class="hero-card hero-card--top reveal" aria-hidden="true"><span>Esta noche</span><strong>Bafun uni sobre arroz tibio</strong></div>
+        <div class="hero-card hero-card--bottom reveal" aria-hidden="true"><span>Nota de sake</span><strong>Junmai daiginjo de Yamagata</strong></div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Kaze Omakase services and highlights"><div class="marquee__track"><span>Omakase de temporada</span><span>Edomae Nigiri</span><span>Maridajes de sake excepcionales</span><span>Barra de doce lugares</span><span>Noches privadas de sushi</span><span>Omakase de temporada</span><span>Edomae Nigiri</span><span>Maridajes de sake excepcionales</span><span>Barra de doce lugares</span><span>Noches privadas de sushi</span></div></section>
+
+    <section class="section experience" id="experience"><div class="container experience__grid">
+      <div class="section-copy reveal"><p class="eyebrow">La experiencia Kaze</p><h2>Una barra contenida donde el arroz, el cuchillo y la temporada deciden la noche.</h2><p>Kaze esta construido alrededor de una precision silenciosa. El pescado llega a diario, el arroz se sazona en pequenas tandas y cada pieza cruza la barra en el instante exacto en que debe comerse.</p></div>
+      <div class="experience__visual reveal"><img src="assets/images/gallery/experience.jpg" alt="Chef preparando sushi con manos precisas en la barra" width="1536" height="1024" loading="lazy" decoding="async"><div class="experience__note"><span>Ritmo de servicio</span><strong>Medido, silencioso y completamente presente.</strong></div></div>
+      <div class="feature-grid"><article class="feature-card reveal"><span class="feature-card__number">01</span><h3>Tecnica edomae</h3><p>Pescado madurado, tare pincelado, arroz tibio y cortes limpios dan forma a cada pieza.</p></article><article class="feature-card reveal"><span class="feature-card__number">02</span><h3>Producto de temporada</h3><p>La seleccion se mueve con los mercados japoneses, aguas locales y la inspeccion matinal del chef.</p></article><article class="feature-card reveal"><span class="feature-card__number">03</span><h3>Solo doce lugares</h3><p>Una barra oscura y minimalista disenada para foco, conversacion y ritmo exacto.</p></article></div>
+    </div></section>
+
+    <section class="section ritual"><div class="container ritual__grid"><div class="section-copy reveal"><p class="eyebrow">El ritual</p><h2>Cinco decisiones pequenas sostienen toda la noche.</h2><p>Cada servicio avanza con gestos medidos: temperatura, corte, mercado, sake y silencio. Nada se acelera; cada pieza llega cuando tiene que llegar.</p></div><div class="ritual-grid">
+        <article class="ritual-card reveal">
+          <span>01</span>
+          <h3>Temperatura del arroz</h3>
+          <p>El shari se sirve tibio para que el pescado respire y la salinidad aparezca sin esfuerzo.</p>
+        </article>
+        <article class="ritual-card reveal">
+          <span>02</span>
+          <h3>Disciplina del cuchillo</h3>
+          <p>Cada corte busca textura, brillo y longitud exacta antes de tocar la mano del chef.</p>
+        </article>
+        <article class="ritual-card reveal">
+          <span>03</span>
+          <h3>Pescado de temporada</h3>
+          <p>La progresion cambia con la maduracion, el mercado y la inspeccion de la manana.</p>
+        </article>
+        <article class="ritual-card reveal">
+          <span>04</span>
+          <h3>Ritmo del sake</h3>
+          <p>La temperatura de cada copa acompana grasa, acidez y pausa entre bocados.</p>
+        </article>
+      </div></div></section>
+
+    <section class="section menu-section" id="menu"><div class="container">
+      <div class="section-head reveal"><div><p class="eyebrow">Omakase de temporada</p><h2>Una progresion precisa de arroz, pescado, sake y contencion.</h2></div><p>El menu cambia con el mercado: sashimi limpio, nigiri tibio, hand rolls y finales silenciosos compuestos para la estacion.</p></div>
+      <div class="menu-filters reveal" aria-label="Filter menu dishes">
+          <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">Todo</button>
+          <button class="filter-btn" type="button" data-filter="sashimi" aria-pressed="false">Sashimi</button>
+          <button class="filter-btn" type="button" data-filter="nigiri" aria-pressed="false">Nigiri</button>
+          <button class="filter-btn" type="button" data-filter="sake" aria-pressed="false">Sake</button>
+          <button class="filter-btn" type="button" data-filter="finish" aria-pressed="false">Final</button>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+          <article class="menu-card reveal" data-category="sashimi">
+            <div class="menu-card__top">
+              <span>Sashimi</span>
+              <strong>$28</strong>
+            </div>
+            <h3>Kanpachi Usuzukuri</h3>
+            <p>Pez limon, sudachi, soja blanca y myoga laminado.</p>
+          </article>
+          <article class="menu-card reveal" data-category="sashimi">
+            <div class="menu-card__top">
+              <span>Sashimi</span>
+              <strong>$34</strong>
+            </div>
+            <h3>Vieira de Hokkaido</h3>
+            <p>Hotate, yuzu kosho, sal ahumada y dashi frio.</p>
+          </article>
+          <article class="menu-card reveal" data-category="nigiri">
+            <div class="menu-card__top">
+              <span>Nigiri</span>
+              <strong>$42</strong>
+            </div>
+            <h3>Akami Zuke</h3>
+            <p>Atun rojo marinado, arroz tibio, nikiri y wasabi.</p>
+          </article>
+          <article class="menu-card reveal" data-category="nigiri">
+            <div class="menu-card__top">
+              <span>Nigiri</span>
+              <strong>$58</strong>
+            </div>
+            <h3>Bafun Uni</h3>
+            <p>Erizo de mar sobre arroz tibio, nori y un trazo suave de soja.</p>
+          </article>
+          <article class="menu-card reveal" data-category="nigiri">
+            <div class="menu-card__top">
+              <span>Nigiri</span>
+              <strong>$38</strong>
+            </div>
+            <h3>Anago</h3>
+            <p>Anguila de mar, glaseado tsume, sansho y una calidez leve de carbon.</p>
+          </article>
+          <article class="menu-card reveal" data-category="sake">
+            <div class="menu-card__top">
+              <span>Sake</span>
+              <strong>$36</strong>
+            </div>
+            <h3>Maridaje Junmai Daiginjo</h3>
+            <p>Un vuelo preciso de sake pulido, elegido por textura y final.</p>
+          </article>
+          <article class="menu-card reveal" data-category="sake">
+            <div class="menu-card__top">
+              <span>Sake</span>
+              <strong>$24</strong>
+            </div>
+            <h3>Seleccion Nama</h3>
+            <p>Sake de temporada sin pasteurizar, con claridad, elevacion y fruta delicada.</p>
+          </article>
+          <article class="menu-card reveal" data-category="finish">
+            <div class="menu-card__top">
+              <span>Final</span>
+              <strong>$18</strong>
+            </div>
+            <h3>Helado de leche y matcha</h3>
+            <p>Matcha ceremonial, arroz tostado y crumble de sesamo negro.</p>
+          </article>
+      </div>
+      <article class="menu-featured reveal">
+        <span class="menu-featured__eyebrow">Paso destacado</span>
+        <h3>Akami zuke sobre arroz tibio</h3>
+        <p>Atun rojo marinado, nikiri ligero y wasabi fresco. Una pieza breve, directa, pensada para revelar la temperatura exacta del arroz.</p>
+        <strong>Servido al inicio de la progresion de nigiri</strong>
+      </article>
+    </div></section>
+
+    <section class="section tasting"><div class="container tasting__grid"><div class="tasting__card reveal"><p class="eyebrow">Omakase del chef</p><h2>Diecisiete momentos definidos por el mercado y la mano.</h2><p>La progresion nocturna avanza desde sashimi limpio hacia nigiri tibio, un hand roll, sopa clara y un dulce final contenido.</p><div class="tasting__price">$185 <span>por persona</span></div><a class="btn btn--gold" href="#reservations">Reservar omakase</a></div><ol class="course-list reveal"><li><span>01</span> Chawanmushi, cangrejo de nieve, mitsuba</li><li><span>02</span> Kanpachi, sudachi, soja blanca</li><li><span>03</span> Akami zuke, arroz tibio, nikiri</li><li><span>04</span> Bafun uni, nori, wasabi</li><li><span>05</span> Helado de leche y matcha, arroz tostado</li></ol></div></section>
+
+    <section class="section wine"><div class="container wine__grid"><div class="section-copy reveal"><p class="eyebrow">Maridaje de sake</p><h2>Una cava de sake pensada para claridad, arroz y tension silenciosa.</h2><p>El maridaje recorre junmai, ginjo, nama y sake madurado, ajustando temperatura y textura a cada paso.</p><a class="btn btn--glass" href="#reservations">Ver maridajes</a></div><div class="pairing-grid"><article class="pairing-card reveal"><span>01</span><h3>Maridaje clasico de sake</h3><p>Selecciones elegantes de junmai y ginjo con elevacion, textura y equilibrio.</p></article><article class="pairing-card reveal"><span>02</span><h3>Maridaje descubrimiento</h3><p>Nama, kimoto, sake espumoso y botellas regionales poco frecuentes.</p></article><article class="pairing-card reveal"><span>03</span><h3>Maridaje de reserva</h3><p>Daiginjo limitado y sake madurado abiertos para noches especiales en la barra.</p></article></div></div></section>
+
+    <section class="section chef" id="chef"><div class="container chef__grid"><div class="chef__image reveal"><img src="assets/images/gallery/chef.jpg" alt="Chef Kenji Sato preparando sushi detras de una barra omakase oscura" width="1536" height="1024" loading="lazy" decoding="async"></div><div class="section-copy reveal"><p class="eyebrow">Chef Kenji Sato</p><h2>Una barra guiada por disciplina, temporada y el gesto mas pequeno posible.</h2><p>Kenji Sato se formo en Tokio antes de construir Kaze alrededor de la temperatura del arroz, la maduracion del pescado y la disciplina de servir cada pieza en su punto mas fugaz.</p><blockquote>"Omakase es confianza. El invitado nos entrega la noche y respondemos pieza por pieza."</blockquote><p class="chef__signature">Kenji Sato</p></div></div></section>
+
+    <section class="section gallery" id="gallery"><div class="container"><div class="section-head reveal"><div><p class="eyebrow">Galeria</p><h2>Barra, cuchillo, arroz, sake.</h2></div><p>Escenas de una barra oscura inspirada en Tokio: laca, veta, pescado, manos y pequenas pausas entre piezas.</p></div><div class="gallery-grid">
+          <button class="gallery-item gallery-item--wide reveal" type="button" aria-label="Nigiri servido sobre arroz tibio sazonado" data-caption="Nigiri servido sobre arroz tibio sazonado" data-full="assets/images/gallery/gallery-01.jpg">
+            <img src="assets/images/gallery/gallery-01.jpg" alt="Nigiri surtido sobre un plato oscuro" width="1536" height="1024" loading="lazy" decoding="async">
+          </button>
+          <button class="gallery-item reveal" type="button" aria-label="Manos del chef dando forma al arroz en la barra" data-caption="Manos del chef dando forma al arroz en la barra" data-full="assets/images/gallery/gallery-02.jpg">
+            <img src="assets/images/gallery/gallery-02.jpg" alt="Chef de sushi preparando nigiri a mano" width="1536" height="1024" loading="lazy" decoding="async">
+          </button>
+          <button class="gallery-item reveal" type="button" aria-label="Sake seleccionado para el maridaje nocturno" data-caption="Sake seleccionado para el maridaje nocturno" data-full="assets/images/gallery/gallery-03.jpg">
+            <img src="assets/images/gallery/gallery-03.jpg" alt="Botella y copa de sake japones en luz baja" width="1536" height="1024" loading="lazy" decoding="async">
+          </button>
+          <button class="gallery-item gallery-item--tall reveal" type="button" aria-label="Trabajo de cuchillo antes del primer turno" data-caption="Trabajo de cuchillo antes del primer turno" data-full="assets/images/gallery/gallery-04.jpg">
+            <img src="assets/images/gallery/gallery-04.jpg" alt="Chef de sushi cortando pescado fresco" width="1536" height="1024" loading="lazy" decoding="async">
+          </button>
+          <button class="gallery-item reveal" type="button" aria-label="Un curso limpio de sashimi con citrico" data-caption="Un curso limpio de sashimi con citrico" data-full="assets/images/gallery/gallery-05.jpg">
+            <img src="assets/images/gallery/gallery-05.jpg" alt="Curso de sashimi dispuesto en un plato minimalista" width="1024" height="1536" loading="lazy" decoding="async">
+          </button>
+          <button class="gallery-item reveal" type="button" aria-label="Luz minima en la barra antes del servicio" data-caption="Luz minima en la barra antes del servicio" data-full="assets/images/gallery/gallery-06.jpg">
+            <img src="assets/images/gallery/gallery-06.jpg" alt="Interior oscuro de restaurante japones con barra" width="1536" height="1024" loading="lazy" decoding="async">
+          </button>
+          <button class="gallery-item reveal" type="button" aria-label="Pescado fresco preparado para omakase" data-caption="Pescado fresco preparado para omakase" data-full="assets/images/gallery/gallery-07.jpg">
+            <img src="assets/images/gallery/gallery-07.jpg" alt="Mariscos frescos preparados para servicio de sushi" width="1717" height="916" loading="lazy" decoding="async">
+          </button>
+          <button class="gallery-item gallery-item--wide reveal" type="button" aria-label="Matcha y arroz tostado para cerrar la noche" data-caption="Matcha y arroz tostado para cerrar la noche" data-full="assets/images/gallery/gallery-08.jpg">
+            <img src="assets/images/gallery/gallery-08.jpg" alt="Te japones servido en una taza ceramica" width="1536" height="1024" loading="lazy" decoding="async">
+          </button>
+    </div></div></section>
+
+    <section class="section testimonials"><div class="container"><div class="section-head reveal"><div><p class="eyebrow">Resenas</p><h2>Los invitados recuerdan el silencio tanto como el pescado.</h2></div></div><div class="testimonial-grid"><article class="testimonial-card reveal"><div class="rating" aria-label="Calificacion de cinco estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Kaze es exacto sin sentirse frio. La temperatura del arroz, el sake, el ritmo: cada detalle llega en silencio."</p><strong>Mara Whitman</strong></article><article class="testimonial-card reveal"><div class="rating" aria-label="Calificacion de cinco estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Una pequena barra oscura con la disciplina de Tokio y la calidez de un chef que lee a cada invitado."</p><strong>Julian Reeves</strong></article><article class="testimonial-card reveal"><div class="rating" aria-label="Calificacion de cinco estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Solo el paso de uni ya justifico la reserva. Contenido, hermoso y completamente memorable."</p><strong>Clara Bennett</strong></article></div></div></section>
+
+    <section class="section private-events"><div class="container events__grid"><div class="section-copy reveal"><p class="eyebrow">Omakase privado</p><h2>Para cenas de fundadores, coleccionistas y celebraciones que requieren foco.</h2><p>Reserva la barra completa para un omakase privado construido alrededor de pescado de temporada, maridaje de sake, servicio silencioso y el ritmo de tus invitados.</p><a class="btn btn--gold" href="#reservations">Planear omakase privado</a></div><div class="event-list reveal" aria-label="Private event formats"><div><span>01</span> Reserva completa de barra para hasta 12 invitados</div><div><span>02</span> Cenas ejecutivas y maridajes de sake de coleccion</div><div><span>03</span> Celebraciones especiales con menus de temporada a medida</div></div></div></section>
+
+    <section class="section reservations" id="reservations"><div class="container reservations__grid"><div class="section-copy reveal"><p class="eyebrow">Reservas</p><h2>Reserva la barra. El menu seguira a la temporada.</h2><p>Para alergias, solicitudes de maridaje de sake o reservas privadas de barra completa, deja una nota y nuestro equipo respondera con disponibilidad.</p><div class="reservation-note"><span>Horarios</span><strong>Martes a sabado, turnos 6:00 PM y 8:45 PM</strong></div></div>
+      <form class="reservation-form reveal" id="reservationForm" novalidate><div class="form-grid"><div class="form-field"><label for="name">Nombre</label><input id="name" name="name" type="name" autocomplete="name" aria-describedby="nameError" required><small class="field-error" id="nameError" aria-live="polite"></small></div><div class="form-field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" aria-describedby="emailError" required><small class="field-error" id="emailError" aria-live="polite"></small></div><div class="form-field"><label for="date">Fecha</label><input id="date" name="date" type="date" autocomplete="off" aria-describedby="dateError" required><small class="field-error" id="dateError" aria-live="polite"></small></div><div class="form-field"><label for="time">Hora</label><input id="time" name="time" type="time" autocomplete="off" aria-describedby="timeError" required><small class="field-error" id="timeError" aria-live="polite"></small></div><div class="form-field"><label for="guests">Personas</label><input id="guests" name="guests" type="number" autocomplete="off" aria-describedby="guestsError" required><small class="field-error" id="guestsError" aria-live="polite"></small></div><div class="form-field form-field--full"><label for="message">Mensaje</label><textarea id="message" name="message" rows="5" placeholder="Alergias, interes en maridaje de sake, ocasion o solicitud de barra privada" aria-describedby="messageError"></textarea><small class="field-error" id="messageError" aria-live="polite"></small></div></div><button class="btn btn--gold" type="submit">Solicitar reserva</button><p class="form-success" id="formSuccess" role="status" aria-live="polite"></p></form>
+    </div></section>
+
+    <section class="section location"><div class="container location__grid"><div class="location-card reveal"><p class="eyebrow">Ubicacion</p><h2>18 Shiro Lane, Tribeca</h2><div class="location-list"><p><strong>Horarios</strong> Martes a sabado, turnos 6:00 PM y 8:45 PM</p><p><strong>Telefono</strong> <a href="tel:+12125550147">+1 212 555 0147</a></p><p><strong>Email</strong> <a href="mailto:reservations@kazeomakase.com">reservations@kazeomakase.com</a></p></div><a class="btn btn--glass" href="mailto:reservations@kazeomakase.com">Contactar al equipo anfitrion</a></div><div class="map-card reveal" aria-label="Stylized map showing Kaze Omakase location"><div class="map-card__grid" aria-hidden="true"></div><div class="map-card__pin" aria-hidden="true"><span></span></div><p>Kaze Omakase<br><strong>New York</strong></p></div></div></section>
+
+    <section class="section faq"><div class="container faq__grid"><div class="section-copy reveal"><p class="eyebrow">Preguntas frecuentes</p><h2>Antes de la barra.</h2></div><div class="accordion reveal" id="faqAccordion">
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              Cuanto dura el omakase?
+              <span aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" hidden>
+              <p>La mayoria de los turnos dura alrededor de dos horas. Recomendamos llegar diez minutos antes para que la barra pueda comenzar junta.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              Pueden adaptar alergias?
+              <span aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" hidden>
+              <p>Incluye alergias al solicitar tu reserva. Como el menu se centra en pescado, arroz, soja y mariscos, algunas restricciones pueden requerir confirmacion previa.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              Ofrecen menu a la carta?
+              <span aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" hidden>
+              <p>Kaze trabaja solo con omakase. El chef puede ofrecer piezas suplementarias segun el mercado.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              Cual es la politica de cancelacion?
+              <span aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" hidden>
+              <p>Las reservas pueden modificarse hasta 48 horas antes de la llegada. Las cancelaciones tardias de omakase pueden generar un cargo.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              Ofrecen reservas privadas?
+              <span aria-hidden="true"></span>
+            </button>
+            <div class="accordion-panel" hidden>
+              <p>Si. La barra completa puede reservarse para hasta 12 invitados con maridaje de sake opcional.</p>
+            </div>
+          </div>
+    </div></div></section>
+
+    <section class="final-cta"><div class="container final-cta__content reveal"><p class="eyebrow">La barra esta lista</p><h2>Confia en la temporada. Deja que el chef decida la noche.</h2><a class="btn btn--gold" href="#reservations">Reservar barra</a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer__grid"><div><a class="brand footer__brand" href="#home" aria-label="Kaze Omakase home"><span>Kaze</span><small>Omakase</small></a><p>Omakase de lujo inspirado en Tokio</p></div><div><h3>Explorar</h3><a href="#experience">Experiencia</a><a href="#menu">Menu</a><a href="#chef">Chef</a><a href="#gallery">Galeria</a></div><div><h3>Redes</h3>        <a href="https://instagram.com/kazeomakase" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://tiktok.com/@kazeomakase" target="_blank" rel="noopener noreferrer">TikTok</a></div><form class="newsletter" id="newsletterForm" novalidate><h3>Notas privadas</h3><label for="newsletterEmail">Recibe novedades del menu de temporada.</label><div class="newsletter__row"><input id="newsletterEmail" name="newsletterEmail" type="email" placeholder="Correo electronico" aria-label="Correo electronico"><button class="btn btn--small btn--glass" type="submit">Unirme</button></div><p id="newsletterMessage" class="newsletter__message" role="status" aria-live="polite"></p></form></div><div class="container footer__bottom"><p>&copy; <span id="currentYear"></span> Kaze Omakase. Todos los derechos reservados.</p><div class="footer__links"><a href="#home">Volver arriba</a><a href="privacy.html">Privacidad</a></div></div></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Gallery image preview" hidden><button class="lightbox__close" id="lightboxClose" type="button" aria-label="Close gallery preview">&times;</button><img id="lightboxImage" alt="" decoding="async"><p id="lightboxCaption"></p></div>
+</body>
+</html>

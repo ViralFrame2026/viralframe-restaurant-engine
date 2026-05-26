@@ -1,0 +1,34 @@
+{
+  "mood": "modern Italian, candlelit, crafted pasta, wine, warm luxury",
+  "fonts": {
+    "heading": "\"Playfair Display\", Georgia, serif",
+    "body": "\"Inter\", Arial, sans-serif"
+  },
+  "colors": {
+    "bg": "#060504",
+    "gold": "#C9A15A",
+    "cream": "#F6EFE4",
+    "wine": "#741F24",
+    "sage": "#8F9A78"
+  },
+  "overlays": { "hero": "warm trattoria luxury", "section": "soft candlelight" },
+  "imagery": { "style": "handmade pasta, wine, marble, candlelight" },
+  "labels": { "primaryCta": "Reserve a Table", "secondaryCta": "View Menu" },
+  "heroStyle": { "composition": "romantic editorial", "tone": "warm" },
+  "spacing": { "section": "generous", "cards": "comfortable" },
+  "cards": { "radius": "8px", "style": "warm glass" },
+  "buttons": { "radius": "999px", "style": "gold primary" },
+  "sectionLabels": { "experience": "Italian hospitality", "menu": "Seasonal menu", "chef": "Chef", "gallery": "Gallery", "reservations": "Reservations" },
+  "menuCategoryDefaults": [
+    { "label": "All", "value": "all" },
+    { "label": "Antipasti", "value": "antipasti" },
+    { "label": "Pasta", "value": "pasta" },
+    { "label": "Secondi", "value": "secondi" },
+    { "label": "Wine", "value": "wine" }
+  ],
+  "faqDefaults": [
+    { "question": "Do you make pasta in house?", "answer": "Fresh pasta can be featured as a core menu promise." },
+    { "question": "Can you host private events?", "answer": "Private dining and family-style menus are available." }
+  ],
+  "seoDefaults": { "titleSuffix": "Modern Italian Restaurant", "description": "Premium Italian restaurant landing page for handmade pasta, wine, and private dining." }
+}
